@@ -1,6 +1,6 @@
 [build]
-  command = "yarn mask && cross-env BUILD_MODE=standalone next build --no-lint"
-  publish = ".next"
+  command = "yarn build"                
+  publish = ".next"                    
 
-[functions]
-  node_bundler = "esbuild"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"   
